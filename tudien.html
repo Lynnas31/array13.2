@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form>
+    <input type="text" id="nhaptu">
+    <button type="button" id="search" onclick="clickSearch()" >Search</button>
+</form>
+<script>
+    function clickSearch() {
+        let Eng = ["Hello","Goodbye","Red","Blue","White"];
+        let Vie = ["Xin chao","Tam biet" ,"Do" ,"Xanh" ,"Trang"];
+        let word = document.getElementById('nhaptu').value;
+        for (i=0;i<Eng.length;i++){
+            if (word == Eng[i]){
+                alert(Vie[i]);
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
